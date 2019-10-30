@@ -278,7 +278,6 @@
         </section>-->
       </main>
 
-
   </Layout>
 </template>
 
@@ -309,6 +308,7 @@ query Home ($page: Int) {
 </page-query>
 
 <script>
+/*
   const doc = document.documentElement;
 
   doc.classList.remove('no-js')
@@ -316,7 +316,7 @@ query Home ($page: Int) {
 
   // Reveal animations
   if (document.body.classList.contains('has-animations')) {
-    /* global ScrollReveal */
+    /!* global ScrollReveal *!/
     const sr = window.sr = ScrollReveal()
 
     sr.reveal('.hero-title, .hero-paragraph, .hero-cta', {
@@ -363,7 +363,7 @@ query Home ($page: Int) {
       })
     })
   }
-
+*/
 
 import { Pager } from 'gridsome'
 import Post from '~/components/Post.vue'
