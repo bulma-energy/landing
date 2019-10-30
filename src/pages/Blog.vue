@@ -1,12 +1,15 @@
 <template>
     <Layout>
-        <h1>Welcome to my blog :)</h1>
+        <div class="blog-page">
+
         <ul class="post-list">
             <li v-for="{ node } in $page.allWordPressPost.edges" :key="node.id">
-                <Post :post="node" />
+
+                    <Post :post="node" />
             </li>
         </ul>
         <Pager :info="$page.allWordPressPost.pageInfo"/>
+        </div>
     </Layout>
 </template>
 
@@ -50,3 +53,11 @@
         }
     }
 </script>
+
+<style lang="scss">
+    .blog-page{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+</style>

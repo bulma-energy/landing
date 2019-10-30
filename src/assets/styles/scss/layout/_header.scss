@@ -1,6 +1,12 @@
 .site-header {
-    position: relative;
+    position: fixed;
+    width: 100%;
     padding: 24px 0;
+    background-color: transparent;
+    z-index: 10;
+    a{
+        text-decoration: none;
+    }
 }
 
 .site-header-inner {
@@ -8,6 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
 .header-links {

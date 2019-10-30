@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout page="info">
     <section class="info__blurb">
       <div v-html="data.description"></div>
       <div v-html="data.cta"></div>

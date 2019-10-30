@@ -1,17 +1,19 @@
 <template>
-  <div>
-    <nav class="nav">
-      <g-link class="nav__link" to="/">Home</g-link>
-      <g-link class="nav__link" to="/blog">Blog</g-link>
-      <g-link class="nav__link" to="/contact">Contact</g-link>
-    </nav>
-    <slot />
+  <div class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+      <Header/>
+      <slot />
+    </div>
   </div>
 </template>
 
 <script>
+  import Header from "~/components/Header.vue";
 export default {
-  name: "Home"
+  name: "Home",
+  components: {
+    Header
+  }
 };
 </script>
 

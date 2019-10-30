@@ -1,133 +1,285 @@
 <template>
-  <Home class="is-boxed has-animations">
-  <div class="body-wrap boxed-container">
-    <header class="site-header">
-      <div class="container">
-        <div class="site-header-inner">
-          <div class="brand header-brand">
-            <h1 class="m-0">
-              <a href="#">
-                <img class="header-logo-image asset-light" src="dist/images/logo-light.svg" alt="Logo">
-                <img class="header-logo-image asset-dark" src="dist/images/logo-dark.svg" alt="Logo">
-              </a>
-            </h1>
-          </div>
-        </div>
-      </div>
-    </header>
+  <Layout>
 
+      <main>
+        <section class="hero">
+          <g-image src="~/assets/images/top-image-house-solar.jpg"></g-image>
+          <div class="container">
+            <div class="hero-inner">
+              <div class="hero-copy">
+                <h1 class="hero-title h2-mobile mt-0 is-revealing">{{data.headline}}</h1>
+                <p class="hero-paragraph is-revealing">{{data.subHeadline}}</p>
+                <p class="hero-cta is-revealing"><a class="button button-primary button-shadow" href="#">{{data.cta}}</a></p>
+              </div>
 
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="hero-inner">
-            <div class="hero-copy">
-              <h1 class="hero-title mt-0">Landing template for startups</h1>
-              <p class="hero-paragraph">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
-              <div class="hero-cta">
-                <a class="button button-primary" href="#">Buy it now</a>
-                <div class="lights-toggle">
-                  <input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch" checked="checked">
-                  <label for="lights-toggle" class="text-xs"><span>Turn me <span class="label-text">dark</span></span></label>
-                </div>
-              </div>
-            </div>
-            <div class="hero-media">
-              <div class="header-illustration">
-                <img class="header-illustration-image asset-light" src="dist/images/header-illustration-light.svg" alt="Header illustration">
-                <img class="header-illustration-image asset-dark" src="dist/images/header-illustration-dark.svg" alt="Header illustration">
-              </div>
-              <div class="hero-media-illustration">
-                <img class="hero-media-illustration-image asset-light" src="dist/images/hero-media-illustration-light.svg" alt="Hero media illustration">
-                <img class="hero-media-illustration-image asset-dark" src="dist/images/hero-media-illustration-dark.svg" alt="Hero media illustration">
-              </div>
-              <div class="hero-media-container">
-                <img class="hero-media-image asset-light" src="dist/images/hero-media-light.svg" alt="Hero media">
-                <img class="hero-media-image asset-dark" src="dist/images/hero-media-dark.svg" alt="Hero media">
-              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="features section">
-        <div class="container">
-          <div class="features-inner section-inner has-bottom-divider">
-            <div class="features-header text-center">
-              <div class="container-sm">
-                <h2 class="section-title mt-0">The Product</h2>
-                <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
-                <div class="features-image">
-                  <img class="features-illustration asset-dark" src="dist/images/features-illustration-dark.svg" alt="Feature illustration">
-                  <img class="features-box asset-dark" src="dist/images/features-box-dark.svg" alt="Feature box">
-                  <img class="features-illustration asset-dark" src="dist/images/features-illustration-top-dark.svg" alt="Feature illustration top">
-                  <img class="features-illustration asset-light" src="dist/images/features-illustration-light.svg" alt="Feature illustration">
-                  <img class="features-box asset-light" src="dist/images/features-box-light.svg" alt="Feature box">
-                  <img class="features-illustration asset-light" src="dist/images/features-illustration-top-light.svg" alt="Feature illustration top">
-                </div>
-              </div>
-            </div>
-            <div class="features-wrap">
-              <div class="feature is-revealing">
-                <div class="feature-inner">
-                  <div class="feature-icon">
-                    <img class="asset-light" src="dist/images/feature-01-light.svg" alt="Feature 01">
-                    <img class="asset-dark" src="dist/images/feature-01-dark.svg" alt="Feature 01">
-                  </div>
-                  <div class="feature-content">
-                    <h3 class="feature-title mt-0">Discover</h3>
-                    <p class="text-sm mb-0">Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dui.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="feature is-revealing">
-                <div class="feature-inner">
-                  <div class="feature-icon">
-                    <img class="asset-light" src="dist/images/feature-02-light.svg" alt="Feature 02">
-                    <img class="asset-dark" src="dist/images/feature-02-dark.svg" alt="Feature 02">
-                  </div>
-                  <div class="feature-content">
-                    <h3 class="feature-title mt-0">Discover</h3>
-                    <p class="text-sm mb-0">Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dui.</p>
+        <section class="features section text-center">
+          <div class="section-square"></div>
+          <div class="container">
+            <div class="features-inner section-inner">
+              <div class="features-wrap">
+                <div class="feature is-revealing">
+                  <div class="feature-inner">
+                    <div class="feature-icon">
+                      <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                          <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-1-a">
+                            <stop stop-color="#007CFE" stop-opacity="0" offset="0%"/>
+                            <stop stop-color="#007DFF" offset="100%"/>
+                          </linearGradient>
+                          <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="feature-1-b">
+                            <stop stop-color="#FF4F7A" stop-opacity="0" offset="0%"/>
+                            <stop stop-color="#FF4F7A" offset="100%"/>
+                          </linearGradient>
+                        </defs>
+                        <g fill="none" fill-rule="evenodd">
+                          <path d="M8 0h24v24a8 8 0 0 1-8 8H0V8a8 8 0 0 1 8-8z" fill="url(#feature-1-a)"/>
+                          <path d="M48 16v24a8 8 0 0 1-8 8H16c0-17.673 14.327-32 32-32z" fill="url(#feature-1-b)"/>
+                        </g>
+                      </svg>
+                    </div>
+                    <h4 class="feature-title h3-mobile">Feature</h4>
+                    <p class="text-sm">A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements.</p>
                   </div>
                 </div>
-              </div>
-              <div class="feature is-revealing">
-                <div class="feature-inner">
-                  <div class="feature-icon">
-                    <img class="asset-light" src="dist/images/feature-03-light.svg" alt="Feature 03">
-                    <img class="asset-dark" src="dist/images/feature-03-dark.svg" alt="Feature 03">
+                <div class="feature is-revealing">
+                  <div class="feature-inner">
+                    <div class="feature-icon">
+                      <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                          <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-2-a">
+                            <stop stop-color="#007CFE" stop-opacity="0" offset="0%"/>
+                            <stop stop-color="#007DFF" offset="100%"/>
+                          </linearGradient>
+                          <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="feature-2-b">
+                            <stop stop-color="#FF4F7A" stop-opacity="0" offset="0%"/>
+                            <stop stop-color="#FF4F7A" offset="100%"/>
+                          </linearGradient>
+                        </defs>
+                        <g fill="none" fill-rule="evenodd">
+                          <path d="M0 0h32v7c0 13.807-11.193 25-25 25H0V0z" fill="url(#feature-2-a)"/>
+                          <path d="M48 16v7c0 13.807-11.193 25-25 25h-7c0-17.673 14.327-32 32-32z" fill="url(#feature-2-b)" transform="matrix(1 0 0 -1 0 64)"/>
+                        </g>
+                      </svg>
+
+                    </div>
+                    <h4 class="feature-title h3-mobile">Feature</h4>
+                    <p class="text-sm">A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements.</p>
                   </div>
-                  <div class="feature-content">
-                    <h3 class="feature-title mt-0">Discover</h3>
-                    <p class="text-sm mb-0">Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dui.</p>
+                </div>
+                <div class="feature is-revealing">
+                  <div class="feature-inner">
+                    <div class="feature-icon">
+                      <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                          <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-3-a">
+                            <stop stop-color="#007CFE" stop-opacity="0" offset="0%"/>
+                            <stop stop-color="#007DFF" offset="100%"/>
+                          </linearGradient>
+                          <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="feature-3-b">
+                            <stop stop-color="#FF4F7A" stop-opacity="0" offset="0%"/>
+                            <stop stop-color="#FF4F7A" offset="100%"/>
+                          </linearGradient>
+                        </defs>
+                        <g fill="none" fill-rule="evenodd">
+                          <circle fill="url(#feature-3-a)" cx="16" cy="16" r="16"/>
+                          <path d="M16 16c17.673 0 32 14.327 32 32H16V16z" fill="url(#feature-3-b)"/>
+                        </g>
+                      </svg>
+
+                    </div>
+                    <h4 class="feature-title h3-mobile">Feature</h4>
+                    <p class="text-sm">A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements.</p>
+                  </div>
+                </div>
+                <div class="feature is-revealing">
+                  <div class="feature-inner">
+                    <div class="feature-icon">
+                      <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                          <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="feature-4-a">
+                            <stop stop-color="#FF4F7A" stop-opacity="0" offset="0%"/>
+                            <stop stop-color="#FF4F7A" offset="100%"/>
+                          </linearGradient>
+                          <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-4-b">
+                            <stop stop-color="#007CFE" stop-opacity="0" offset="0%"/>
+                            <stop stop-color="#007DFF" offset="100%"/>
+                          </linearGradient>
+                        </defs>
+                        <g fill="none" fill-rule="evenodd">
+                          <path d="M32 16h16v16c0 8.837-7.163 16-16 16H16V32c0-8.837 7.163-16 16-16z" fill="url(#feature-4-a)"/>
+                          <path d="M16 0h16v16c0 8.837-7.163 16-16 16H0V16C0 7.163 7.163 0 16 0z" fill="url(#feature-4-b)"/>
+                        </g>
+                      </svg>
+
+                    </div>
+                    <h4 class="feature-title h3-mobile">Feature</h4>
+                    <p class="text-sm">A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="cta section">
-        <div class="container-sm">
-          <div class="cta-inner section-inner">
-            <div class="cta-header text-center">
-              <h2 class="section-title mt-0">Get it and Switch</h2>
-              <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
-              <div class="cta-cta">
-                <a class="button button-primary" href="#">Buy it now</a>
+<!--        <section class="pricing section">
+          <div class="section-square"></div>
+          <div class="container">
+            <div class="pricing-inner section-inner has-top-divider">
+              <h2 class="section-title mt-0 text-center">Pricing</h2>
+              <div class="pricing-tables-wrap">
+                <div class="pricing-table">
+                  <div class="pricing-table-inner">
+                    <div class="pricing-table-main">
+                      <div class="pricing-table-header is-revealing">
+                        <div class="pricing-table-title mt-12 mb-8">Starter</div>
+                        <div class="pricing-table-price mb-32 pb-24"><span class="pricing-table-price-currency h4">$</span><span class="pricing-table-price-amount h2">27</span>/mo</div>
+                      </div>
+                      <ul class="pricing-table-features list-reset text-xs mt-24 mb-56">
+                        <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                          <span>Lorem ipsum is common text </span>
+                        </li>
+                        <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                          <span>Lorem ipsum is common text </span>
+                        </li>
+                        <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                          <span>Lorem ipsum is common text </span>
+                        </li>
+                        <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                          <span>Lorem ipsum is common text </span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="pricing-table-cta is-revealing">
+                      <a class="button button-primary button-shadow button-block" href="#">Get early access</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="pricing-table">
+                  <div class="pricing-table-inner">
+                    <div class="pricing-table-main">
+                      <div class="pricing-table-header is-revealing">
+                        <div class="pricing-table-title mt-12 mb-8">Professional</div>
+                        <div class="pricing-table-price mb-32 pb-24"><span class="pricing-table-price-currency h4">$</span><span class="pricing-table-price-amount h2">97</span>/mo</div>
+                      </div>
+                      <ul class="pricing-table-features list-reset text-xs mt-24 mb-56">
+                        <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                          <span>Lorem ipsum is common text </span>
+                        </li>
+                        <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                          <span>Lorem ipsum is common text </span>
+                        </li>
+                        <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                          <span>Lorem ipsum is common text </span>
+                        </li>
+                        <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                          <span>Lorem ipsum is common text </span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="pricing-table-cta is-revealing">
+                      <a class="button button-primary button-shadow button-block" href="#">Get early access</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="pricing-table">
+                  <div class="pricing-table-inner">
+                    <div class="pricing-table-main">
+                      <div class="pricing-table-header is-revealing">
+                        <div class="pricing-table-title mt-12 mb-8">Business</div>
+                        <div class="pricing-table-price mb-32 pb-24"><span class="pricing-table-price-currency h4">$</span><span class="pricing-table-price-amount h2">147</span>/mo</div>
+                      </div>
+                      <ul class="pricing-table-features list-reset text-xs mt-24 mb-56">
+                        <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                          <span>Lorem ipsum is common text </span>
+                        </li>
+                        <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                          <span>Lorem ipsum is common text </span>
+                        </li>
+                        <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                          <span>Lorem ipsum is common text </span>
+                        </li>
+                        <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                          <span>Lorem ipsum is common text </span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="pricing-table-cta is-revealing">
+                      <a class="button button-primary button-shadow button-block" href="#">Get early access</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>-->
+      </main>
 
 
-  </div>
-
-  </Home>
+  </Layout>
 </template>
 
 <page-query>
@@ -146,10 +298,73 @@ query Home ($page: Int) {
       }
     }
   }
+  metaData {
+    homeData {
+        headline
+        subHeadline
+        cta
+    }
+  }
 }
 </page-query>
 
 <script>
+  const doc = document.documentElement;
+
+  doc.classList.remove('no-js')
+  doc.classList.add('js')
+
+  // Reveal animations
+  if (document.body.classList.contains('has-animations')) {
+    /* global ScrollReveal */
+    const sr = window.sr = ScrollReveal()
+
+    sr.reveal('.hero-title, .hero-paragraph, .hero-cta', {
+      duration: 1000,
+      distance: '40px',
+      easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',
+      origin: 'left',
+      interval: 150
+    })
+
+    sr.reveal('.hero-illustration', {
+      duration: 1000,
+      distance: '40px',
+      easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',
+      origin: 'right',
+      interval: 150
+    })
+
+    sr.reveal('.feature', {
+      duration: 1000,
+      distance: '40px',
+      easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',
+      interval: 100,
+      origin: 'bottom',
+      scale: 0.9,
+      viewFactor: 0.5
+    })
+
+    const pricingTables = document.querySelectorAll('.pricing-table')
+
+    pricingTables.forEach(pricingTable => {
+      const pricingTableHeader = [].slice.call(pricingTable.querySelectorAll('.pricing-table-header'))
+      const pricingTableList = [].slice.call(pricingTable.querySelectorAll('.pricing-table-features li'))
+      const pricingTableCta = [].slice.call(pricingTable.querySelectorAll('.pricing-table-cta'))
+      const elements = pricingTableHeader.concat(pricingTableList).concat(pricingTableCta)
+
+      sr.reveal(elements, {
+        duration: 600,
+        distance: '20px',
+        easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',
+        interval: 100,
+        origin: 'bottom',
+        viewFactor: 0.5
+      })
+    })
+  }
+
+
 import { Pager } from 'gridsome'
 import Post from '~/components/Post.vue'
 import Home from '~/layouts/Home.vue'
@@ -162,6 +377,11 @@ export default {
   },
   metaInfo: {
     title: 'Welcome to my blog :)'
-  }
+  },
+computed: {
+    data: function() {
+        return this.$page.metaData.homeData;
+    }
+}
 }
 </script>

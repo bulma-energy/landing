@@ -1,8 +1,8 @@
 .hero {
     position: relative;
     text-align: center;
-    padding-top: 40px;
-
+    padding-top: 80px;
+    overflow: hidden;
     &::before {
         content: '';
         position: absolute;
@@ -10,8 +10,18 @@
         right: 0;
         height: 230px;
         width: 80%;
-        background: mix(color(primary, 1), color(primary, 2));
-        background: linear-gradient(to top right, color(primary, 1) 0, color(primary, 2) 100%);
+        //background: mix(color(primary, 1), color(primary, 2));
+        //background: linear-gradient(to top right, color(primary, 1) 0, color(primary, 2) 100%);
+    }
+    img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100vw;
+    }
+    .hero-cta{
+        color: black;
     }
 }
 
@@ -19,8 +29,11 @@
     position: relative; /* To display all elements above the background color */
 }
 
+
+
 .hero-title {
     @include font-weight(bold);
+    font-size: 2.8em;
 }
 
 .hero-paragraph {
@@ -45,7 +58,7 @@
 
     .hero {
         text-align: left;
-        padding-top: 92px;
+        padding-top: 172px;
         padding-bottom: 80px;
 
         &::before {
@@ -63,6 +76,7 @@
     .hero-copy {
         padding-right: 48px;
         min-width: 512px;
+        max-width: 50%;
     }
 
     .hero-illustration {

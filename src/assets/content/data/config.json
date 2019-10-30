@@ -4,10 +4,10 @@
   "contact": {
     "email": "hello@bulmaenergy.com",
     "twitter_handle": "BulmaEnergy",
-    "github_handle": "sergormo"
+    "github_handle": "bulma-energy"
   },
   "primary_color": "#ACCAC5",
-  "repository_url": "",
+  "footer": "Copyright &copy; 2019",
   "WP_base": "https://bulmaenergy.com/",
   "G_Analytics": "UA-142543264-1"
 }

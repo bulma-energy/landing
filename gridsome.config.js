@@ -1,4 +1,5 @@
 const config = require("./src/assets/content/data/config.json");
+const homeData = require("./src/assets/content/data/home.json");
 const infoData = require("./src/assets/content/data/info.json");
 
 module.exports = {
@@ -15,6 +16,8 @@ module.exports = {
     siteName: config.title,
     siteDescription: config.description,
     infoData: infoData,
+    configData: config,
+    homeData: homeData,
   },
 
   plugins: [
