@@ -49,7 +49,7 @@
             Post
         },
         metaInfo: {
-            title: 'Welcome to my blog :)'
+            title: 'Blog'
         }
     }
 </script>

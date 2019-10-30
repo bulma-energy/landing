@@ -376,7 +376,7 @@ export default {
     Post
   },
   metaInfo: {
-    title: 'Welcome to my blog :)'
+    title: 'Welcome'
   },
 computed: {
     data: function() {

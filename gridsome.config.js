@@ -3,8 +3,8 @@ const homeData = require("./src/assets/content/data/home.json");
 const infoData = require("./src/assets/content/data/info.json");
 
 module.exports = {
-  siteName: 'Your SiteName',
-  siteDescription: 'Your site description',
+  siteName: 'Bulma Energy',
+  siteDescription: 'Por una transición limpia a la indendencia energética',
 
   templates: {
     WordPressCategory: '/category/:slug', // adds route for "category" post type (Optional)
