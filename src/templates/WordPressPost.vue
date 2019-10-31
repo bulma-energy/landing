@@ -18,7 +18,7 @@
         </g-link>
         <div>
 
-      <template v-if="$page.wordPressPost.categories.length">
+<!--      <template v-if="$page.wordPressPost.categories.length">
         <h4>Posted in</h4>
         <ul class="list categories">
           <li v-for="category in $page.wordPressPost.categories" :key="category.id" >
@@ -33,7 +33,7 @@
             <g-link :to="tag.path">{{ tag.title }}</g-link>
           </li>
         </ul>
-      </template>
+      </template>-->
         </div>
       </div>
 <!--    <h1 v-html="$page.wordPressPost.title"/>-->
