@@ -9,16 +9,16 @@
                 </div>
                 <ul class="footer-links list-reset">
                     <li>
-                        <a href="#">Contact</a>
+                        <g-link to="/contact">Contact</g-link>
                     </li>
                     <li>
-                        <a href="#">About us</a>
+                        <g-link to="/contact">About us</g-link>
                     </li>
                     <li>
-                        <a href="#">FAQ's</a>
+                        <g-link to="/contact">FAQ's</g-link>
                     </li>
                     <li>
-                        <a href="#">Support</a>
+                        <g-link to="/contact">Support</g-link>
                     </li>
                 </ul>
                 <ul class="footer-social-links list-reset">
@@ -29,10 +29,10 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <g-link to="https://twitter.com/BulmaEnergy">
                             <span class="screen-reader-text">Twitter</span>
                             <g-image src="~/assets/images/twitter.svg"></g-image>
-                        </a>
+                        </g-link>
                     </li>
                     <li>
                         <a href="#">

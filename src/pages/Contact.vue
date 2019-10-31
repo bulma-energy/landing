@@ -1,31 +1,27 @@
 <template>
   <Layout page="info">
     <section class="info__blurb">
-      <div v-html="data.description"></div>
-      <div v-html="data.cta"></div>
-      <ul>
-        <li>
+      <div>
+      <div class="info__container">
+        <div v-html="data.description"></div>
+        <div v-html="data.cta"></div>
           <p>
             <a :href="`mailto:${data.contact.email}`">
               Email: {{ data.contact.email }}
             </a>
           </p>
-        </li>
-        <li>
           <p>
             <a :href="`https://twitter.com/${data.contact.twitter_handle}`">
               Twitter: @{{ data.contact.twitter_handle }}
             </a>
           </p>
-        </li>
-        <li>
-          <p>
+<!--          <p>
             <a :href="`https://github.com/${data.contact.github_handle}`">
               Github: {{ data.contact.github_handle }}
             </a>
-          </p>
-        </li>
-      </ul>
+          </p>-->
+      </div>
+      </div>
     </section>
   </Layout>
 </template>
@@ -76,19 +72,31 @@
     }
   }
   .info__blurb {
-    max-width: 600px;
-
+      background: #d8ff55;
+      background: linear-gradient(65deg, #EFFF00 0, #C0FFAA 100%);
     padding: 1.5rem 1.25rem;
     border: none;
+    min-height: 100vh;
     p {
       font-size: 1rem;
     }
+    a{
+      text-decoration: none;
+      &:hover{
+      text-decoration: underline;
+
+      }
+    }
+  }
+
+  .info__container{
+    padding-top: 100px;
   }
 
   @media (min-width: 768px) {
     .info__blurb {
       border: 1px solid white;
-      margin: 100px auto 0 auto;
+      /*margin: 100px auto 0 auto;*/
       padding: 2rem;
     }
   }

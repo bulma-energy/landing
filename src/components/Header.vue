@@ -5,12 +5,11 @@
                 <div class="brand header-brand">
                     <h1 class="m-0">
                         <g-link to="/">
-                            <g-image src="~/assets/images/logo.svg"></g-image>
+                            <g-image height="25" width="150" src="~/assets/images/logo_letra.svg"></g-image>
                         </g-link>
                     </h1>
                 </div>
                 <nav>
-                    <g-link class="nav__link" to="/">Home</g-link>
                     <g-link class="nav__link" to="/blog">Blog</g-link>
                     <g-link class="nav__link" to="/contact">Contact</g-link>
                 </nav>

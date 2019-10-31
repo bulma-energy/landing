@@ -33,6 +33,9 @@
     background: color(bg, 1);
     padding: 40px 24px;
     @include shadow;
+    img{
+        height: 70px;
+    }
 }
 
 .feature-icon {

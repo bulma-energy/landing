@@ -53,6 +53,6 @@ nav[role="navigation"] a {
   padding-left: 0;
 }
 .post-list li {
-  padding: 1em 0;
+  padding: 0 1em 1em 1em;
 }
 </style>

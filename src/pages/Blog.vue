@@ -1,14 +1,13 @@
 <template>
-    <Layout>
+    <Layout class="blog-layout">
         <div class="blog-page">
+            <ul class="post-list">
+                <li v-for="{ node } in $page.allWordPressPost.edges" :key="node.id">
 
-        <ul class="post-list">
-            <li v-for="{ node } in $page.allWordPressPost.edges" :key="node.id">
-
-                    <Post :post="node" />
-            </li>
-        </ul>
-        <Pager :info="$page.allWordPressPost.pageInfo"/>
+                        <Post :post="node" />
+                </li>
+            </ul>
+            <Pager :info="$page.allWordPressPost.pageInfo"/>
         </div>
     </Layout>
 </template>
@@ -55,9 +54,16 @@
 </script>
 
 <style lang="scss">
+
     .blog-page{
         max-width: 600px;
         margin: 0 auto;
+        padding-top: 80px;
+    }
+    .blog-layout{
+        background: #d8ff55;
+        background: linear-gradient(65deg, #EFFF00 0, #C0FFAA 100%);
+
     }
 
 </style>

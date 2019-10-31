@@ -3,13 +3,16 @@
 
       <main>
         <section class="hero">
-          <g-image src="~/assets/images/top-image-house-solar.jpg"></g-image>
+          <div class="img-container">
+<!--            <g-image class="center" fit="contain" src="~/assets/images/top-image-house-solar.jpg"></g-image>-->
+          </div>
           <div class="container">
             <div class="hero-inner">
               <div class="hero-copy">
                 <h1 class="hero-title h2-mobile mt-0 is-revealing">{{data.headline}}</h1>
                 <p class="hero-paragraph is-revealing">{{data.subHeadline}}</p>
-                <p class="hero-cta is-revealing"><a class="button button-primary button-shadow" href="#">{{data.cta}}</a></p>
+                <p class="hero-cta is-revealing">
+                  <a class="button button-primary button-shadow" href="/contact">{{data.cta}}</a></p>
               </div>
 
             </div>
@@ -21,103 +24,14 @@
           <div class="container">
             <div class="features-inner section-inner">
               <div class="features-wrap">
-                <div class="feature is-revealing">
-                  <div class="feature-inner">
-                    <div class="feature-icon">
-                      <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                          <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-1-a">
-                            <stop stop-color="#007CFE" stop-opacity="0" offset="0%"/>
-                            <stop stop-color="#007DFF" offset="100%"/>
-                          </linearGradient>
-                          <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="feature-1-b">
-                            <stop stop-color="#FF4F7A" stop-opacity="0" offset="0%"/>
-                            <stop stop-color="#FF4F7A" offset="100%"/>
-                          </linearGradient>
-                        </defs>
-                        <g fill="none" fill-rule="evenodd">
-                          <path d="M8 0h24v24a8 8 0 0 1-8 8H0V8a8 8 0 0 1 8-8z" fill="url(#feature-1-a)"/>
-                          <path d="M48 16v24a8 8 0 0 1-8 8H16c0-17.673 14.327-32 32-32z" fill="url(#feature-1-b)"/>
-                        </g>
-                      </svg>
-                    </div>
-                    <h4 class="feature-title h3-mobile">Feature</h4>
-                    <p class="text-sm">A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements.</p>
-                  </div>
-                </div>
-                <div class="feature is-revealing">
-                  <div class="feature-inner">
-                    <div class="feature-icon">
-                      <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                          <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-2-a">
-                            <stop stop-color="#007CFE" stop-opacity="0" offset="0%"/>
-                            <stop stop-color="#007DFF" offset="100%"/>
-                          </linearGradient>
-                          <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="feature-2-b">
-                            <stop stop-color="#FF4F7A" stop-opacity="0" offset="0%"/>
-                            <stop stop-color="#FF4F7A" offset="100%"/>
-                          </linearGradient>
-                        </defs>
-                        <g fill="none" fill-rule="evenodd">
-                          <path d="M0 0h32v7c0 13.807-11.193 25-25 25H0V0z" fill="url(#feature-2-a)"/>
-                          <path d="M48 16v7c0 13.807-11.193 25-25 25h-7c0-17.673 14.327-32 32-32z" fill="url(#feature-2-b)" transform="matrix(1 0 0 -1 0 64)"/>
-                        </g>
-                      </svg>
+                <div v-for="feature in features" class="feature is-revealing">
 
-                    </div>
-                    <h4 class="feature-title h3-mobile">Feature</h4>
-                    <p class="text-sm">A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements.</p>
-                  </div>
-                </div>
-                <div class="feature is-revealing">
                   <div class="feature-inner">
                     <div class="feature-icon">
-                      <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                          <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-3-a">
-                            <stop stop-color="#007CFE" stop-opacity="0" offset="0%"/>
-                            <stop stop-color="#007DFF" offset="100%"/>
-                          </linearGradient>
-                          <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="feature-3-b">
-                            <stop stop-color="#FF4F7A" stop-opacity="0" offset="0%"/>
-                            <stop stop-color="#FF4F7A" offset="100%"/>
-                          </linearGradient>
-                        </defs>
-                        <g fill="none" fill-rule="evenodd">
-                          <circle fill="url(#feature-3-a)" cx="16" cy="16" r="16"/>
-                          <path d="M16 16c17.673 0 32 14.327 32 32H16V16z" fill="url(#feature-3-b)"/>
-                        </g>
-                      </svg>
-
+                      <img height="30" :src="'images/' + feature.img">
                     </div>
-                    <h4 class="feature-title h3-mobile">Feature</h4>
-                    <p class="text-sm">A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements.</p>
-                  </div>
-                </div>
-                <div class="feature is-revealing">
-                  <div class="feature-inner">
-                    <div class="feature-icon">
-                      <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                          <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="feature-4-a">
-                            <stop stop-color="#FF4F7A" stop-opacity="0" offset="0%"/>
-                            <stop stop-color="#FF4F7A" offset="100%"/>
-                          </linearGradient>
-                          <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-4-b">
-                            <stop stop-color="#007CFE" stop-opacity="0" offset="0%"/>
-                            <stop stop-color="#007DFF" offset="100%"/>
-                          </linearGradient>
-                        </defs>
-                        <g fill="none" fill-rule="evenodd">
-                          <path d="M32 16h16v16c0 8.837-7.163 16-16 16H16V32c0-8.837 7.163-16 16-16z" fill="url(#feature-4-a)"/>
-                          <path d="M16 0h16v16c0 8.837-7.163 16-16 16H0V16C0 7.163 7.163 0 16 0z" fill="url(#feature-4-b)"/>
-                        </g>
-                      </svg>
-
-                    </div>
-                    <h4 class="feature-title h3-mobile">Feature</h4>
-                    <p class="text-sm">A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements.</p>
+                    <h4 class="feature-title h3-mobile">{{feature.title}}</h4>
+                    <p class="text-sm">{{feature.description}}</p>
                   </div>
                 </div>
               </div>
@@ -368,9 +282,11 @@ query Home ($page: Int) {
 import { Pager } from 'gridsome'
 import Post from '~/components/Post.vue'
 import Home from '~/layouts/Home.vue'
+import ImageContainer from "../components/imageContainer";
 
 export default {
   components: {
+    ImageContainer,
     Pager,
     Home,
     Post
@@ -381,7 +297,21 @@ export default {
 computed: {
     data: function() {
         return this.$page.metaData.homeData;
-    }
+    },
+  features: function() {
+    return [
+      {
+        title: "Ahorra",
+        description: "Ahorra hasta un 70% de la factura de la luz",
+        img: "feature-save.svg"
+      },
+      {
+        title: "Independencia",
+        description: "Consigue una independencia completa de la red eléctrica",
+        img: "feature-independent.svg"
+      },
+    ];
+  }
 }
 }
 </script>

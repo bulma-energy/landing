@@ -62,6 +62,9 @@
 
         a {
             padding: 8px;
+            &:hover{
+                color: #7EFF48;
+            }
         }
     }
 }
