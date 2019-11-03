@@ -1,9 +1,10 @@
 {
   "description": "<p>Hola!</p>",
   "cta": "<p>No dudes en escribirnos</p>",
+  "call": "+34 660 97 80 59",
   "contact": {
     "email": "hola@bulmaenergy.com",
-    "phone": "+34 660 97 80 59",
+    "email2": "hola@bulmaenergy.com",
     "twitter_handle": "BulmaEnergy",
     "github_handle": "bulma-energy"
   },

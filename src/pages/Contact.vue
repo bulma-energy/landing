@@ -8,8 +8,8 @@
         <div class="info__container__heading" v-html="data.description"></div>
         <div v-html="data.cta"></div>
           <p>
-            <a :href="`tel:${data.contact.phone}`">
-              Telefono: {{ data.contact.phone }}
+            <a>
+              Telefono: +34 660 97 80 59
             </a>
           </p>
           <p>
