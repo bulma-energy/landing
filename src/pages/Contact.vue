@@ -3,8 +3,15 @@
     <section class="info__blurb">
       <div>
       <div class="info__container">
-        <div v-html="data.description"></div>
+        <div class="info__container__cont">
+
+        <div class="info__container__heading" v-html="data.description"></div>
         <div v-html="data.cta"></div>
+          <p>
+            <a :href="`tel:${data.contact.phone}`">
+              Telefono: {{ data.contact.phone }}
+            </a>
+          </p>
           <p>
             <a :href="`mailto:${data.contact.email}`">
               Email: {{ data.contact.email }}
@@ -20,6 +27,7 @@
               Github: {{ data.contact.github_handle }}
             </a>
           </p>-->
+      </div>
       </div>
       </div>
     </section>
@@ -72,8 +80,7 @@
     }
   }
   .info__blurb {
-      background: #d8ff55;
-      background: linear-gradient(65deg, #EFFF00 0, #C0FFAA 100%);
+      background: #d1c2af;
     padding: 1.5rem 1.25rem;
     border: none;
     min-height: 100vh;
@@ -90,7 +97,15 @@
   }
 
   .info__container{
-    padding-top: 100px;
+    margin: 100px auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.53);
+    max-width: 680px;
+    &__cont{
+      padding: 40px;
+    }
+    &__heading{
+      font-weight: 700;
+    }
   }
 
   @media (min-width: 768px) {

@@ -14,7 +14,6 @@
                 <p class="hero-cta is-revealing">
                   <a class="button button-primary button-shadow" href="/contact">{{data.cta}}</a></p>
               </div>
-
             </div>
           </div>
         </section>
@@ -190,6 +189,8 @@
             </div>
           </div>
         </section>-->
+
+
       </main>
 
   </Layout>

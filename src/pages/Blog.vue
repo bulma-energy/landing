@@ -58,12 +58,10 @@
     .blog-page{
         max-width: 600px;
         margin: 0 auto;
-        padding-top: 80px;
+        padding-top: 90px;
     }
     .blog-layout{
-        background: #d8ff55;
-        background: linear-gradient(65deg, #EFFF00 0, #C0FFAA 100%);
-
+        background: #cacab8;
     }
 
 </style>

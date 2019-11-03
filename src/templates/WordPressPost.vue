@@ -84,7 +84,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
   ul.list {
     list-style: none;
     padding: 0;
@@ -122,17 +122,18 @@ export default {
       min-height: 100%;
       margin-bottom: 0;
       object-fit: cover;
-      width: 100% !important;
+      width: 100%;
     }
   }
 
   .blog__info {
-    text-align: center;
+    text-align: left;
     padding: 1.5rem 1.25rem;
     width: 100%;
-    max-width: 768px;
+    max-width: 680px;
     margin: 0 auto;
     h1 {
+      font-weight: 700;
       margin-bottom: 0.66rem;
     }
     h3 {
@@ -146,6 +147,7 @@ export default {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    line-height: 1.45rem;
     justify-content: center;
     a {
       padding-bottom: 1.45rem;
@@ -155,7 +157,7 @@ export default {
     }
     h1, h2, h3, h4, h5, h6 {
       font-weight: normal;
-      padding: 1.5rem;
+      padding: 1.3rem;
       line-height: 1.2;
       margin-bottom: 1.5rem;
     }
@@ -182,7 +184,7 @@ export default {
     align-items: center;
     padding: 1.5rem 1.25rem;
     width: 100%;
-    max-width: 800px;
+    max-width: 680px;
     margin: 0 auto;
     h2 {
       margin-bottom: 0;
@@ -206,11 +208,11 @@ export default {
         min-height: 100%;
         margin-bottom: 0;
         object-fit: cover;
-        width: 100% !important;
+        width: 100%;
       }
     }
     .blog__body {
-      max-width: 800px;
+      max-width: 680px;
       padding: 0 2rem;
       span {
         width: 100%;
@@ -226,10 +228,11 @@ export default {
       height: 75vh;
       img {
         min-width: 100%;
+        width: 100%;
       }
     }
     .blog__info {
-      text-align: center;
+      text-align: left;
       padding: 2rem 0;
       h1 {
         max-width: 500px;
@@ -249,7 +252,9 @@ export default {
         min-height: 100%;
         margin-bottom: 0;
         object-fit: cover;
-        width: 100% !important;
+      }
+      img{
+        width: 100%;
       }
     }
     .blog__info {

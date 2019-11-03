@@ -10,9 +10,9 @@
     </g-link>
     <div class="post-content">
 
+      <g-link :to="post.path">
       <h2 v-html="post.title" />
       <div class="post-content__text" v-html="post.excerpt" />
-      <g-link :to="post.path">
         Leer mas
       </g-link>
     </div>
@@ -34,6 +34,11 @@ export default {
   .post{
     background-color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 6px;
+    &:hover{
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
     h2{
       margin: 0;
       padding-bottom: 20px;
@@ -46,11 +51,9 @@ export default {
       font-size: 1em;
       }
       a{
-
-      font-size: 0.8em;
+        font-size: 0.8em;
         text-decoration: none;
         &:hover{
-          text-decoration: underline;
         }
       }
     }

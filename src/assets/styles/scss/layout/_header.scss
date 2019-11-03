@@ -4,6 +4,8 @@
     padding: 24px 0;
     background-color: transparent;
     z-index: 10;
+    @include font-family(base-sans);
+    color: #1F2B35;
     a{
         text-decoration: none;
     }

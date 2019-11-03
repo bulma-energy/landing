@@ -31,13 +31,13 @@ $color: (
  	)
 );
 
-@import url('https://fonts.googleapis.com/css?family=Heebo:500,700&display=swap');
-// --------------------------------------------
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:400,400i&display=swap');// --------------------------------------------
 // Typography ---------------------------------
 // --------------------------------------------
 $font__family: (
-	base: '"Hind Vadodara", sans-serif', // font-family(base)
-	heading: '"Heebo", sans-serif', // font-family(heading)
+	base: '"Open+Sans", sans-serif', // font-family(base)
+	base-sans: '"Open+Sans", sans-serif', // font-family(base-sans)
+	heading: '"Lato", sans-serif', // font-family(heading)
 	code: 'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace', // font-family(code)
 	pre: '"Courier 10 Pitch", Courier, monospace' // font-family(pre)
 );

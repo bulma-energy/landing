@@ -9,16 +9,16 @@
                 </div>
                 <ul class="footer-links list-reset">
                     <li>
-                        <g-link to="/contact">Contact</g-link>
+                        <g-link to="/contact">Contacto</g-link>
                     </li>
                     <li>
-                        <g-link to="/contact">About us</g-link>
+                        <g-link to="/aviso">Aviso legal</g-link>
                     </li>
+      <!--              <li>
+                        <g-link to="/">FAQ's</g-link>
+                    </li>-->
                     <li>
-                        <g-link to="/contact">FAQ's</g-link>
-                    </li>
-                    <li>
-                        <g-link to="/contact">Support</g-link>
+                        <g-link to="/privacy">Políticas privacidad</g-link>
                     </li>
                 </ul>
                 <ul class="footer-social-links list-reset">
