@@ -9,7 +9,7 @@
                         </g-link>
                     </h1>
                 </div>
-                <nav>
+                <nav class="nav">
                     <g-link class="nav__link" to="/blog">Blog</g-link>
                     <g-link class="nav__link" to="/contact">Contacta</g-link>
                 </nav>
@@ -24,6 +24,20 @@
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+    .nav{
+        &__link{
+        background-color: rgba(255, 255, 255, 0.34);
+            padding: 2px 5px;
+            margin-left: 10px;
+            &:hover{
+        background-color: rgba(255, 255, 255, 0.64);
+
+            }
+            &:first-child{
+                margin-left: 0px;
+            }
+        }
+    }
 
 </style>

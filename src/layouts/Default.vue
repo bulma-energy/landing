@@ -47,6 +47,9 @@ nav[role="navigation"] a {
 }
 .nav__link {
   margin-left: 20px;
+  &:first-child{
+    margin-left: 0px;
+  }
 }
 .post-list {
   list-style: none;
