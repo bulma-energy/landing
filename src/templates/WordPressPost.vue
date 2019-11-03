@@ -2,7 +2,7 @@
   <Layout>
     <article class="blog">
       <figure v-if="$page.wordPressPost.featuredMedia" class="blog__hero">
-        <g-image class="blog-image" :src="$page.wordPressPost.featuredMedia.sourceUrl" :alt="$page.wordPressPost.featuredMedia.altText" :immediate="false"></g-image>
+        <g-image class="blog-image" :src="$page.wordPressPost.featuredMedia.sourceUrl" :alt="$page.wordPressPost.featuredMedia.altText" :immediate="false" fit="contain"></g-image>
       </figure>
       <div class="blog__info" >
         <h1 v-html="$page.wordPressPost.title"></h1>
@@ -117,6 +117,9 @@ export default {
     height: 60vh;
     width: 100%;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .blog-image {
       min-width: 100%;
       min-height: 100%;
