@@ -4,7 +4,7 @@
             <div class="site-footer-inner has-top-divider">
                 <div class="brand footer-brand">
                     <a href="#">
-                        <g-image src="~/assets/images/logo.svg"></g-image>
+                        <g-image height="30" width="110" src="~/assets/images/logo_letra.svg"></g-image>
                     </a>
                 </div>
                 <ul class="footer-links list-reset">
