@@ -22,25 +22,25 @@
                     </li>
                 </ul>
                 <ul class="footer-social-links list-reset">
-                    <li>
+<!--                    <li>
                         <a href="#">
                             <span class="screen-reader-text">Facebook</span>
                             <g-image src="~/assets/images/facebook.svg"></g-image>
                         </a>
-                    </li>
+                    </li>-->
                     <li>
                         <g-link to="https://twitter.com/BulmaEnergy">
                             <span class="screen-reader-text">Twitter</span>
                             <g-image src="~/assets/images/twitter.svg"></g-image>
                         </g-link>
                     </li>
-                    <li>
+<!--                    <li>
                         <a href="#">
                             <span class="screen-reader-text">Google</span>
 
                             <g-image src="~/assets/images/google.svg"></g-image>
                         </a>
-                    </li>
+                    </li>-->
                 </ul>
                 <div class="footer-copyright">&copy; 2019 Bulma Energy, all rights reserved</div>
             </div>
