@@ -11,7 +11,7 @@
                 </div>
                 <nav>
                     <g-link class="nav__link" to="/blog">Blog</g-link>
-                    <g-link class="nav__link" to="/contact">Contact</g-link>
+                    <g-link class="nav__link" to="/contact">Contacta</g-link>
                 </nav>
             </div>
         </div>
