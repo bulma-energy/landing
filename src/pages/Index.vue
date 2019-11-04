@@ -4,7 +4,7 @@
       <main>
         <section class="hero">
           <div class="img-container">
-<!--            <g-image class="center" fit="contain" src="~/assets/images/top-image-house-solar.jpg"></g-image>-->
+            <g-image class="img-container__img" fit="contain" src="~/assets/images/top-image-house-solar.jpg"></g-image>
           </div>
           <div class="container">
             <div class="hero-inner">
@@ -17,6 +17,7 @@
             </div>
           </div>
         </section>
+
 
         <section class="features section text-center">
           <div class="section-square"></div>
