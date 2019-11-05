@@ -9,7 +9,8 @@
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/source-wordpress": "^0.4.3",
     "gridsome": "^0.7.0",
-    "gridsome-source-google-docs": "^0.1.0"
+    "gridsome-source-google-docs": "^0.1.0",
+    "jquery": "^3.4.1"
   },
   "devDependencies": {
     "eslint-plugin-gridsome": "^1.3.2",

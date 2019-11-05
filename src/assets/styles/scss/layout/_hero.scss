@@ -45,11 +45,16 @@
     }
 }
 
+.button-cta{
+    background: #d8ff55;
+    background: linear-gradient(65deg, #EFFF00 0, #C0FFAA 100%);
+    color: #1c2025 !important;
+    border: 1px solid #50ff51;
+}
+
 .hero-inner {
     position: relative; /* To display all elements above the background color */
 }
-
-
 
 .hero-title {
     @include font-weight(bold);
@@ -57,7 +62,6 @@
     padding: 20px 0;
     color: #000000;
     mix-blend-mode: soft-light;
-
 }
 
 .hero-paragraph {

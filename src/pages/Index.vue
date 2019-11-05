@@ -18,7 +18,6 @@
           </div>
         </section>
 
-
         <section class="features section text-center">
           <div class="section-square"></div>
           <div class="container">
