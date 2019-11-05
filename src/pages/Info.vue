@@ -2,7 +2,7 @@
     <Layout page="info">
         <section class="info__blurb">
             <div class="info__container">
-                <h4>Mandanos información y te contactamos directamente.</h4>
+                <h4>Envianos tu contacto y te llamamos directamente.</h4>
                 <mailchimp></mailchimp>
             </div>
         </section>
