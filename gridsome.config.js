@@ -31,15 +31,6 @@ module.exports = {
         concurrent: 10
       }
     },
-/*    {
-      use: 'gridsome-source-google-docs',
-      options: {
-        foldersIds: ['a8o3d384gdjbvxlfdi8rsz3'],
-        clientId: '534534534553-sdify73yriw3sy3ri7y33fis73yfis.apps.googleusercontent.com',
-        clientSecret: 'fsidufhsie734fhsi7si3',
-        apiKey: 'asdas7ir3irshek8hsduska3udhsdu',
-      },
-    },*/
     {
       use: '@gridsome/plugin-google-analytics',
       options: {

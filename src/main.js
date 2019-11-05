@@ -18,6 +18,10 @@ export default function (Vue, { router, head, isClient, appOptions }) {
     src: '/js/drift.js',
     body: true
   });
+  head.script.push({
+    src: '/js/drift.js',
+    body: true
+  });
   
   // Add a meta tag
   /*  head.meta.push({

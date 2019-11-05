@@ -12,7 +12,7 @@
                 <h1 class="hero-title h2-mobile mt-0 is-revealing">{{data.headline}}</h1>
                 <p class="hero-paragraph is-revealing">{{data.subHeadline}}</p>
                 <p class="hero-cta is-revealing">
-                  <a class="button button-primary button-shadow" href="/contact">{{data.cta}}</a></p>
+                  <a class="button button-primary button-shadow" href="/info">{{data.cta}}</a></p>
               </div>
             </div>
           </div>

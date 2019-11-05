@@ -1,11 +1,13 @@
 <template>
   <Layout page="info">
     <section class="info__blurb">
-      <div>
+
       <div class="info__container">
         <div class="info__container__cont">
 
         <div class="info__container__heading" v-html="data.description"></div>
+
+
         <div v-html="data.cta"></div>
           <p>
             <a>
@@ -29,13 +31,14 @@
           </p>-->
       </div>
       </div>
-      </div>
     </section>
   </Layout>
 </template>
 
 <script>
+  import Mailchimp from "../components/mailchimp";
   export default {
+    components: {Mailchimp},
     metaInfo() {
       return {
         title: "Info",
