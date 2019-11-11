@@ -1,4 +1,4 @@
-const config = require("./src/assets/content/data/config.json");
+const configData = require("./src/assets/content/data/config.json");
 const homeData = require("./src/assets/content/data/home.json");
 const infoData = require("./src/assets/content/data/info.json");
 
@@ -13,10 +13,10 @@ module.exports = {
   },
   
   metadata: {
-    siteName: config.title,
-    siteDescription: config.description,
+    siteName: configData.title,
+    siteDescription: configData.description,
     infoData: infoData,
-    configData: config,
+    configData: configData,
     homeData: homeData,
   },
 
@@ -24,7 +24,7 @@ module.exports = {
     {
       use: '@gridsome/source-wordpress',
       options: {
-        baseUrl: config.WP_base, // required
+        baseUrl: configData.WP_base, // required
         typeName: 'WordPress', // GraphQL schema name (Optional)
         apiBase: 'wp-json',
         perPage: 100,
@@ -34,7 +34,7 @@ module.exports = {
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
-        id: config.G_Analytics
+        id: configData.G_Analytics
       }
     },
   ]

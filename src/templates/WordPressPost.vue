@@ -72,6 +72,11 @@ query WordPressPost ($id: ID!) {
       path
     }
   }
+  metaData {
+    configData {
+      base
+    }
+  }
 }
 </page-query>
 
