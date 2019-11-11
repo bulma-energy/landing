@@ -53,6 +53,7 @@ query WordPressPost ($id: ID!) {
   wordPressPost(id: $id) {
     title
     content
+    excerpt
     featuredMedia {
       sourceUrl
       altText
@@ -78,9 +79,44 @@ query WordPressPost ($id: ID!) {
 export default {
   metaInfo () {
     return {
-      title: this.$page.wordPressPost.title
+      title: this.$page.wordPressPost.title,
+      meta: [
+        { hid: "title", name: "title", content: this.$page.wordPressPost.title },
+        {
+          hid: "description",
+          name: "description",
+          content: this.$page.wordPressPost.excerpt
+        },
+
+        // google
+        { itemprop: "name", content: this.$page.wordPressPost.title },
+        { itemprop: "image", content: this.$page.wordPressPost.featuredMedia.sourceUrl },
+        {
+          itemprop: "description",
+          content: this.$page.wordPressPost.excerpt
+        },
+
+        // twitter
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: this.$page.wordPressPost.title },
+        {
+          name: "twitter:description",
+          content: this.$page.wordPressPost.excerpt
+        },
+        { name: "twitter:image:src", content: this.$page.wordPressPost.featuredMedia.sourceUrl },
+
+        // graph data
+        { property: "og:title", content: this.$page.wordPressPost.title },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: this.$page.metaData.configData.base },
+        { property: "og:image", content: this.$page.wordPressPost.featuredMedia.sourceUrl },
+        {
+          property: "og:description",
+          content: this.$page.wordPressPost.excerpt
+        }
+      ]
     }
-  }
+  },
 }
 </script>
 
