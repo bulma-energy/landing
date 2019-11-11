@@ -218,6 +218,9 @@ query Home ($page: Int) {
         subHeadline
         cta
     }
+    configData {
+      base
+    }
   }
 }
 </page-query>
@@ -242,6 +245,46 @@ computed: {
     data: function() {
         return this.$page.metaData.homeData;
     },
+  metaInfo () {
+    return {
+      title: data.headline,
+      meta: [
+        { hid: "title", name: "title", content: data.headline },
+        {
+          hid: "description",
+          name: "description",
+          content: data.subHeadline
+        },
+
+        // google
+        { itemprop: "name", content: data.headline },
+        { itemprop: "image", content: "~/assets/images/top-image-house-solar.jpg" },
+        {
+          itemprop: "description",
+          content: data.subHeadline
+        },
+
+        // twitter
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: data.headline },
+        {
+          name: "twitter:description",
+          content: data.subHeadline
+        },
+        { name: "twitter:image:src", content: "~/assets/images/top-image-house-solar.jpg" },
+
+        // graph data
+        { property: "og:title", content: data.headline },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: this.$page.metaData.configData.base },
+        { property: "og:image", content: "~/assets/images/top-image-house-solar.jpg" },
+        {
+          property: "og:description",
+          content: data.subHeadline
+        }
+      ]
+    }
+  },
   features: function() {
     return [
       {
