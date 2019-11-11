@@ -1,7 +1,9 @@
 <template>
   <div>
     <Header />
-    <slot/>
+      <transition name="fade">
+        <slot/>
+      </transition>
     <Footer />
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <Layout>
-
+    <transition name="fade">
       <main>
         <section class="hero">
           <div class="img-container">
@@ -192,7 +192,7 @@
 
 
       </main>
-
+    </transition>
   </Layout>
 </template>
 
