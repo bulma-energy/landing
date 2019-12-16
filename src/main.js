@@ -22,7 +22,11 @@ export default function (Vue, { router, head, isClient, appOptions }) {
     src: '/js/drift.js',
     body: true
   });
-  
+  head.script.push({
+    src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+    "data-ad-client": "ca-pub-9341059655674222"
+  })
+
   // Add a meta tag
   /*  head.meta.push({
       name: 'keywords',
