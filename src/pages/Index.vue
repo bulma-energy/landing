@@ -4,7 +4,7 @@
       <main>
         <section class="hero">
           <div class="img-container">
-            <g-image class="img-container__img" fit="contain" src="~/assets/images/top-image-house-solar.jpg"></g-image>
+            <g-image class="img-container__img" fit="contain" width="" src="@/assets/images/top-image-house-solar.jpg"></g-image>
           </div>
           <div class="container">
             <div class="hero-inner">
@@ -18,178 +18,7 @@
           </div>
         </section>
 
-        <section class="features section text-center">
-          <div class="section-square"></div>
-          <div class="container">
-            <div class="features-inner section-inner">
-              <div class="features-wrap">
-                <div v-for="feature in features" class="feature is-revealing">
-
-                  <div class="feature-inner">
-                    <div class="feature-icon">
-                      <img height="30" :src="'images/' + feature.img">
-                    </div>
-                    <h4 class="feature-title h3-mobile">{{feature.title}}</h4>
-                    <p class="text-sm">{{feature.description}}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-<!--        <section class="pricing section">
-          <div class="section-square"></div>
-          <div class="container">
-            <div class="pricing-inner section-inner has-top-divider">
-              <h2 class="section-title mt-0 text-center">Pricing</h2>
-              <div class="pricing-tables-wrap">
-                <div class="pricing-table">
-                  <div class="pricing-table-inner">
-                    <div class="pricing-table-main">
-                      <div class="pricing-table-header is-revealing">
-                        <div class="pricing-table-title mt-12 mb-8">Starter</div>
-                        <div class="pricing-table-price mb-32 pb-24"><span class="pricing-table-price-currency h4">$</span><span class="pricing-table-price-amount h2">27</span>/mo</div>
-                      </div>
-                      <ul class="pricing-table-features list-reset text-xs mt-24 mb-56">
-                        <li class="is-revealing">
-                                                <span class="list-icon">
-                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
-                                                    </svg>
-                                                </span>
-                          <span>Lorem ipsum is common text </span>
-                        </li>
-                        <li class="is-revealing">
-                                                <span class="list-icon">
-                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
-                                                    </svg>
-                                                </span>
-                          <span>Lorem ipsum is common text </span>
-                        </li>
-                        <li class="is-revealing">
-                                                <span class="list-icon">
-                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
-                                                    </svg>
-                                                </span>
-                          <span>Lorem ipsum is common text </span>
-                        </li>
-                        <li class="is-revealing">
-                                                <span class="list-icon">
-                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
-                                                    </svg>
-                                                </span>
-                          <span>Lorem ipsum is common text </span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="pricing-table-cta is-revealing">
-                      <a class="button button-primary button-shadow button-block" href="#">Get early access</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="pricing-table">
-                  <div class="pricing-table-inner">
-                    <div class="pricing-table-main">
-                      <div class="pricing-table-header is-revealing">
-                        <div class="pricing-table-title mt-12 mb-8">Professional</div>
-                        <div class="pricing-table-price mb-32 pb-24"><span class="pricing-table-price-currency h4">$</span><span class="pricing-table-price-amount h2">97</span>/mo</div>
-                      </div>
-                      <ul class="pricing-table-features list-reset text-xs mt-24 mb-56">
-                        <li class="is-revealing">
-                                                <span class="list-icon">
-                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
-                                                    </svg>
-                                                </span>
-                          <span>Lorem ipsum is common text </span>
-                        </li>
-                        <li class="is-revealing">
-                                                <span class="list-icon">
-                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
-                                                    </svg>
-                                                </span>
-                          <span>Lorem ipsum is common text </span>
-                        </li>
-                        <li class="is-revealing">
-                                                <span class="list-icon">
-                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
-                                                    </svg>
-                                                </span>
-                          <span>Lorem ipsum is common text </span>
-                        </li>
-                        <li class="is-revealing">
-                                                <span class="list-icon">
-                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
-                                                    </svg>
-                                                </span>
-                          <span>Lorem ipsum is common text </span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="pricing-table-cta is-revealing">
-                      <a class="button button-primary button-shadow button-block" href="#">Get early access</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="pricing-table">
-                  <div class="pricing-table-inner">
-                    <div class="pricing-table-main">
-                      <div class="pricing-table-header is-revealing">
-                        <div class="pricing-table-title mt-12 mb-8">Business</div>
-                        <div class="pricing-table-price mb-32 pb-24"><span class="pricing-table-price-currency h4">$</span><span class="pricing-table-price-amount h2">147</span>/mo</div>
-                      </div>
-                      <ul class="pricing-table-features list-reset text-xs mt-24 mb-56">
-                        <li class="is-revealing">
-                                                <span class="list-icon">
-                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
-                                                    </svg>
-                                                </span>
-                          <span>Lorem ipsum is common text </span>
-                        </li>
-                        <li class="is-revealing">
-                                                <span class="list-icon">
-                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
-                                                    </svg>
-                                                </span>
-                          <span>Lorem ipsum is common text </span>
-                        </li>
-                        <li class="is-revealing">
-                                                <span class="list-icon">
-                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
-                                                    </svg>
-                                                </span>
-                          <span>Lorem ipsum is common text </span>
-                        </li>
-                        <li class="is-revealing">
-                                                <span class="list-icon">
-                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
-                                                    </svg>
-                                                </span>
-                          <span>Lorem ipsum is common text </span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="pricing-table-cta is-revealing">
-                      <a class="button button-primary button-shadow button-block" href="#">Get early access</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>-->
-
+      <Features :features="features"></Features>
 
       </main>
     </transition>
@@ -230,9 +59,13 @@ import { Pager } from 'gridsome'
 import Post from '~/components/Post.vue'
 import Home from '~/layouts/Home.vue'
 import ImageContainer from "../components/imageContainer";
+import Features from "../components/Features";
+import Newsletter from "../components/Newsletter";
 
 export default {
   components: {
+      Newsletter,
+      Features,
     ImageContainer,
     Pager,
     Home,
@@ -285,7 +118,7 @@ computed: {
       ]
     }
   },
-  features: function() {
+  features: () => {
     return [
       {
         title: "Ahorra",
@@ -297,8 +130,24 @@ computed: {
         description: "Consigue una independencia completa de la red eléctrica",
         img: "feature-independent.svg"
       },
+      {
+        title: "Independencia",
+        description: "Consigue una independencia completa de la red eléctrica",
+        img: "feature-independent.svg"
+      },
+      {
+        title: "Independencia",
+        description: "Consigue una independencia completa de la red eléctrica",
+        img: "feature-independent.svg"
+      },
     ];
   }
 }
 }
 </script>
+
+<style lang="scss" scoped>
+  .index-header{
+    background-color: rgba(250, 250, 250, 0.36);
+  }
+</style>

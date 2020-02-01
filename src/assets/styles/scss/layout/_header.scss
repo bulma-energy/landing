@@ -1,9 +1,11 @@
 .site-header {
-    position: absolute;
-    width: 100%;
+    position: fixed;
+    width: 100vw;
+    top: 0;
     padding: 24px 0;
-    background-color: transparent;
+    background-color: #fafafa;
     z-index: 10;
+    @include shadow-sm;
     @include font-family(base-sans);
     color: #1F2B35;
     a{

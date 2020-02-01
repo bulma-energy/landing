@@ -1,12 +1,19 @@
 <template>
   <Layout page="info">
     <section class="info__blurb">
+      <div class="page-header">
+        <h1 class="page-header__text">Contacta con nosotros</h1>
+        <p class="page-header__date">
+          Si tienes cualquier pregunta o duda acerca de como empezar a incorporar en tu dia a dia metodos de ahorro energético, llamanos.
+        </p>
+      </div>
 
       <div class="info__container">
         <div class="info__container__cont">
 
-        <div class="info__container__heading" v-html="data.description"></div>
+        <div class="info__container__heading" v-html="data.description">
 
+        </div>
 
         <div v-html="data.cta"></div>
           <p>
@@ -70,7 +77,7 @@
   }
 </page-query>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .is-info {
     .theme--light.v-tabs > .v-tabs-bar {
       background-color: transparent;
@@ -83,7 +90,6 @@
     }
   }
   .info__blurb {
-      background: #d1c2af;
     padding: 1.5rem 1.25rem;
     border: none;
     min-height: 100vh;
@@ -101,7 +107,7 @@
 
   .info__container{
     margin: 100px auto 0 auto;
-    background-color: rgba(255, 255, 255, 0.53);
+    background-color: white;
     max-width: 680px;
     &__cont{
       padding: 40px;

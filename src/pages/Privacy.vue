@@ -171,7 +171,6 @@
         }
     }
     .info__blurb {
-        background: #d1c2af;
         padding: 1.5rem 1.25rem;
         border: none;
         min-height: 100vh;
@@ -189,7 +188,6 @@
 
     .info__container{
         margin: 100px auto 0 auto;
-        background-color: rgba(255, 255, 255, 0.53);
         max-width: 680px;
         &__cont{
             padding: 40px;

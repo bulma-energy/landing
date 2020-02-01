@@ -1,4 +1,6 @@
 <template>
+    <div>
+        <Newsletter></Newsletter>
     <footer class="site-footer text-light">
         <div class="container">
             <div class="site-footer-inner has-top-divider">
@@ -46,11 +48,15 @@
             </div>
         </div>
     </footer>
+
+    </div>
 </template>
 
 <script>
+    import Newsletter from "./Newsletter";
     export default {
-        name: "Footer"
+        name: "Footer",
+        components: {Newsletter}
     }
 </script>
 

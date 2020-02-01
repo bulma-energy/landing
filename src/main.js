@@ -2,6 +2,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 
 // import "~/assets/scss/reset.scss";
 import "~/assets/styles/scss/style.scss";
+import "~/assets/styles/fonts.scss";
 import "~/assets/styles/scss/_normalize.scss";
 // import "~/assets/js/main.js";
 
@@ -19,16 +20,18 @@ export default function (Vue, { router, head, isClient, appOptions }) {
     body: true
   });
   head.script.push({
-    src: '/js/drift.js',
-    body: true
+    src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+    "data-ad-client": "ca-pub-9341059655674222"
   });
   
   head.script.push({
     src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
     "data-ad-client": "ca-pub-9341059655674222"
   });
+  
+  head.bodyAttrs = { class: 'custom-body-class' },
 
-  // Add a meta tag
+// Add a meta tag
   /*  head.meta.push({
       name: 'keywords',
       content: 'HTML,CSS,XML,JavaScript'
@@ -36,4 +39,3 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   
   Vue.component('Layout', DefaultLayout)
 }
-

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mailchimp-container">
         <!-- Begin Mailchimp Signup Form -->
         <div id="mc_embed_signup">
             <form action="https://bulmaenergy.us3.list-manage.com/subscribe/post?u=4a5bb87b3695858d6fa63065c&amp;id=7dbefd0ef8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -100,7 +100,13 @@
     #mc_embed_signup{
         background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 6px;
+        z-index: 1000;
+        font-family: "Work Sans", sans-serif !important;
+    }
+    .mailchimp-container{
+        background: white;
+        z-index: 20;
+        position: relative;
     }
     /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */

@@ -1,8 +1,10 @@
 <template>
   <div class="is-boxed has-animations">
     <div class="body-wrap boxed-container">
+      <transition name="fade">
       <Header/>
-      <slot />
+      <slot class="main"/>
+      </transition>
     </div>
   </div>
 </template>
@@ -17,4 +19,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+  .main {
+    margin-top: 80px;
+  }
+
+</style>
