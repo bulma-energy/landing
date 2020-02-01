@@ -3,7 +3,7 @@
     <article class="blog">
       <div class="blog__info">
         <h1 class="blog__info__text" v-html="$page.wordPressPost.title"></h1>
-        <p class="blog__info__date">{{ theTime }}</p>
+<!--        <p class="blog__info__date">{{ theTime }}</p>-->
         <p class="blog__info__autor">Autor: {{ $page.wordPressPost.author.name }}</p>
       </div>
       <figure v-if="$page.wordPressPost.featuredMedia" class="blog__hero">
@@ -17,6 +17,7 @@
           ></g-image>
         </div>
       </figure>
+
 
       <div class="blog__body" v-html="$page.wordPressPost.content"></div>
       <div class="blog__footer">

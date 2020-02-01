@@ -58,7 +58,7 @@ export default {
     Post
   },
   metaInfo: {
-    title: "Blog | Bulma Energy"
+    title: "Blog"
   }
 };
 </script>
