@@ -129,17 +129,7 @@ computed: {
         title: "Independencia",
         description: "Consigue una independencia completa de la red eléctrica",
         img: "feature-independent.svg"
-      },
-      {
-        title: "Independencia",
-        description: "Consigue una independencia completa de la red eléctrica",
-        img: "feature-independent.svg"
-      },
-      {
-        title: "Independencia",
-        description: "Consigue una independencia completa de la red eléctrica",
-        img: "feature-independent.svg"
-      },
+      }
     ];
   }
 }

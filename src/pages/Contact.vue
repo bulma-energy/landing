@@ -53,7 +53,7 @@
     },
     computed: {
       data: function() {
-        return this.$page.metaData.infoData;
+        return this.$page.metadata.infoData;
       }
     }
   };
@@ -61,7 +61,7 @@
 
 <page-query>
   query getInfoPageData {
-    metaData {
+    metadata {
       infoData {
         description
         cta
