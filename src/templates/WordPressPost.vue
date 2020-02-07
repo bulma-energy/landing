@@ -6,6 +6,7 @@
 <!--        <p class="blog__info__date">{{ theTime }}</p>-->
         <p class="blog__info__autor">Autor: {{ $page.wordPressPost.author.name }}</p>
       </div>
+
       <figure v-if="$page.wordPressPost.featuredMedia" class="blog__hero">
         <div class="post-image-container">
           <g-image
@@ -17,7 +18,6 @@
           ></g-image>
         </div>
       </figure>
-
 
       <div class="blog__body" v-html="$page.wordPressPost.content"></div>
       <div class="blog__footer">

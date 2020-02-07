@@ -61,6 +61,7 @@ import Home from '~/layouts/Home.vue'
 import ImageContainer from "../components/imageContainer";
 import Features from "../components/Features";
 import Newsletter from "../components/Newsletter";
+import data from "../assets/content/data/home.json"
 
 export default {
   components: {
@@ -75,10 +76,10 @@ export default {
     title: 'Welcome'
   },
 computed: {
-    data: function() {
+    data() {
         return this.$page.metaData.homeData;
     },
-  metaInfo () {
+  metaInfo() {
     return {
       title: data.headline,
       meta: [
@@ -118,19 +119,8 @@ computed: {
       ]
     }
   },
-  features: () => {
-    return [
-      {
-        title: "Ahorra",
-        description: "Ahorra hasta un 70% de la factura de la luz",
-        img: "feature-save.svg"
-      },
-      {
-        title: "Independencia",
-        description: "Consigue una independencia completa de la red eléctrica",
-        img: "feature-independent.svg"
-      }
-    ];
+  features () {
+    return data.features;
   }
 }
 }
