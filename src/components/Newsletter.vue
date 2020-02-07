@@ -19,11 +19,12 @@
 </template>
 
 <script>
+    import homeData from "../assets/content/data/home.json"
     export default {
         name: "Newsletter",
         computed: {
             homeData() {
-                return this.$page.metaData.homeData;
+                return homeData;
             },
         }
     }
