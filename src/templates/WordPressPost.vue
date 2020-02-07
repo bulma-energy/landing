@@ -1,10 +1,13 @@
 <template>
   <Layout>
     <article class="blog">
+
       <div class="blog__info">
         <h1 class="blog__info__text" v-html="$page.wordPressPost.title"></h1>
-<!--        <p class="blog__info__date">{{ theTime }}</p>-->
-        <p class="blog__info__autor">Autor: {{ $page.wordPressPost.author.name }}</p>
+        <p class="blog__info__date">{{ theTime }}</p>
+        <p class="blog__info__autor">
+          Autor: {{ $page.wordPressPost.author.name }}
+        </p>
       </div>
 
       <figure v-if="$page.wordPressPost.featuredMedia" class="blog__hero">
@@ -161,10 +164,10 @@ export default {
     };
   },
   mounted() {
-    this.theTime = moment().format(
-      "MMMM Do YYYY, h:mm:ss a",
-      this.$page.wordPressPost.date
+    this.theTime = moment(this.$page.wordPressPost.date).format(
+      "MMMM Do YYYY, HH:mm"
     );
+
   }
 };
 </script>
