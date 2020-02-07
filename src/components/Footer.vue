@@ -5,7 +5,7 @@
         <div class="container">
             <div class="site-footer-inner has-top-divider">
                 <div class="brand footer-brand">
-                    <a href="#">
+                    <a href="/">
                         <g-image height="30" width="110" src="~/assets/images/logo_letra.svg"></g-image>
                     </a>
                 </div>
@@ -54,6 +54,7 @@
 
 <script>
     import Newsletter from "./Newsletter";
+    import data from "../assets/content/data/home.json"
     export default {
         name: "Footer",
         components: {Newsletter}

@@ -1,27 +1,34 @@
 {
-  "headline": "Cambia tu forma de consumo energético",
-  "subHeadline": "Te damos el servicio y las herramientas para poder realizar de forma sencilla la transición a una independencia energética integral",
-  "cta": "Contacta con nosotros",
-  "features":       [
+  "header": {
+    "headline": "Cambia tu forma de consumo energético",
+    "subHeadline": "Te damos el servicio y las herramientas para poder realizar de forma sencilla la transición a una independencia energética integral",
+    "cta": "Contacta con nosotros"
+  },
+  "features": [
     {
-    "title": "Ahorra",
-    "description": "Ahorra hasta un 70% de la factura de la luz",
-    "img": "feature-save.svg"
-  },
-  {
-    "title": "Independencia",
-    "description": "Consigue una independencia completa de la red eléctrica",
-    "img": "feature-independent.svg"
-  },
-  {
-    "title": "Independencia",
-    "description": "Consigue una independencia completa de la red eléctrica",
-    "img": "feature-independent.svg"
-  },
-  {
-    "title": "Independencia",
-    "description": "Consigue una independencia completa de la red eléctrica",
-    "img": "feature-independent.svg"
+      "title": "Ahorra",
+      "description": "Ahorra hasta un 70% de la factura de la luz",
+      "img": "feature-save.svg"
+    },
+    {
+      "title": "Independencia",
+      "description": "Consigue una independencia completa de la red eléctrica",
+      "img": "feature-independent.svg"
+    },
+    {
+      "title": "Independencia 0",
+      "description": "Consigue una independencia completa de la red eléctrica",
+      "img": "feature-independent.svg"
+    },
+    {
+      "title": "Independencia 2",
+      "description": "Consigue una independencia completa de la red eléctrica",
+      "img": "feature-independent.svg"
+    }
+  ],
+  "newsletter": {
+    "title": "Mantente informado",
+    "description": "Suscribete a nuestra newsletter y estate al dia de los ultimos avances en consumo energético sostenible",
+    "cta": "Suscríbete"
   }
-  ]
 }
