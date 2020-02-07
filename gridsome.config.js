@@ -28,7 +28,11 @@ module.exports = {
         typeName: 'WordPress', // GraphQL schema name (Optional)
         apiBase: 'wp-json',
         perPage: 100,
-        concurrent: 10
+        concurrent: 10,
+        splitPostsIntoFragments: true, // default false
+        downloadRemoteImagesFromPosts: true, // default false
+        downloadRemoteFeaturedImages: true, // default false
+        downloadACFImages: true, // default false
       }
     },
     {
