@@ -4,8 +4,8 @@
             <div class="features-inner section-inner">
                 <div class="features-header text-center">
                     <div class="container-sm feature-heading">
-                        <h2 class="section-title mt-0">Pasate ya a un consumo sostenible</h2>
-                        <p class="section-paragraph">Invierte en energía</p>
+                        <h2 class="section-title mt-0">{{homeData.featuresSection.title}}</h2>
+                        <p class="section-paragraph">{{homeData.featuresSection.description}}</p>
                     </div>
                 </div>
                 <div class="features-wrap">
@@ -27,7 +27,7 @@
 <script>
     export default {
         name: "Features",
-        props: ['features']
+        props: ['features', 'homeData']
     }
 </script>
 

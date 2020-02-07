@@ -91,7 +91,7 @@ query WordPressPost ($id: ID!) {
       path
     }
   }
-  metaData {
+  metadata {
     configData {
       base
     }
@@ -143,7 +143,7 @@ export default {
         // graph data
         { property: "og:title", content: this.$page.wordPressPost.title },
         { property: "og:type", content: "website" },
-        { property: "og:url", content: this.$page.metaData.configData.base },
+        { property: "og:url", content: this.$page.metadata.configData.base },
         {
           property: "og:image",
           content: this.$page.wordPressPost.featuredMedia.sourceUrl

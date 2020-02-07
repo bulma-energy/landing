@@ -4,6 +4,10 @@
     "subHeadline": "Te damos el servicio y las herramientas para poder realizar de forma sencilla la transición a una independencia energética integral",
     "cta": "Contacta con nosotros"
   },
+  "featuresSection": {
+    "title": "Pasate a un consumo energético sostenible",
+    "description": "En los próximos años la innovación tecnológica se va a introducir en la vivienda de forma radical, desde el consumode energía hasta la digitalización de servicios domóticos."
+  },
   "features": [
     {
       "title": "Ahorra",

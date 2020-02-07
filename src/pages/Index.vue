@@ -30,7 +30,7 @@
           </div>
         </section>
 
-        <Features :features="features"></Features>
+        <Features :features="features" :homeData="homeData"></Features>
       </main>
     </transition>
   </Layout>
@@ -52,7 +52,7 @@ query Home ($page: Int) {
       }
     }
   }
-  metaData {
+  metadata {
     homeData {
       header {
         headline
@@ -63,6 +63,10 @@ query Home ($page: Int) {
         title
         description
         cta
+      }
+      featuresSection {
+        title
+        description
       }
     }
     configData {
@@ -95,10 +99,10 @@ export default {
   },
   computed: {
     headerData() {
-      return this.$page.metaData.homeData.header;
+      return this.$page.metadata.homeData.header;
     },
     homeData() {
-      return this.$page.metaData.homeData;
+      return this.$page.metadata.homeData;
     },
     metaInfo() {
       return {
@@ -137,7 +141,7 @@ export default {
           // graph data
           { property: "og:title", content: data.headline },
           { property: "og:type", content: "website" },
-          { property: "og:url", content: this.$page.metaData.configData.base },
+          { property: "og:url", content: this.$page.metadata.configData.base },
           {
             property: "og:image",
             content: "~/assets/images/top-image-house-solar.jpg"
