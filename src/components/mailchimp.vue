@@ -100,12 +100,13 @@
     #mc_embed_signup{
         background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
         z-index: 1000;
         font-family: "Work Sans", sans-serif !important;
     }
     .mailchimp-container{
         background: white;
-        z-index: 20;
+        z-index: 9;
         position: relative;
     }
     /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
