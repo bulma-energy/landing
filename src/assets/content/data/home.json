@@ -10,6 +10,11 @@
   },
   "features": [
     {
+      "title": "Niii",
+      "description": "al lio",
+      "img": "feature-save.svg"
+    },
+    {
       "title": "Ahorra",
       "description": "Ahorra hasta un 70% de la factura de la luz",
       "img": "feature-save.svg"
